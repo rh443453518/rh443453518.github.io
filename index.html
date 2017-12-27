@@ -32,6 +32,15 @@
     <!-- Custom styles for this template -->
     <link href="css/resume.css" rel="stylesheet">
 
+
+    <!-- Core CSS file -->
+    <link rel="stylesheet" href="PhotoSwipe-master/dist/photoswipe.css"> 
+    <!-- Skin CSS file (styling of UI - buttons, caption, etc.)-->
+    <link rel="stylesheet" href="PhotoSwipe-master/dist/default-skin/default-skin.css"> 
+    <!-- Core JS file -->
+    <script src="PhotoSwipe-master/dist/photoswipe.min.js"></script>
+    <!-- UI JS file -->
+    <script src="PhotoSwipe-master/dist/photoswipe-ui-default.min.js"></script> 
   </head>
 
   <body id="page-top">
@@ -66,6 +75,56 @@
         </ul>
       </div>
     </nav>
+
+
+
+
+
+    <div class="pswp" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="pswp__bg"></div>
+    <div class="pswp__scroll-wrap">
+        <div class="pswp__container">
+            <div class="pswp__item"></div>
+            <div class="pswp__item"></div>
+            <div class="pswp__item"></div>
+        </div>
+        <div class="pswp__ui pswp__ui--hidden">
+            <div class="pswp__top-bar">
+                <div class="pswp__counter"></div>
+
+                <button class="pswp__button pswp__button--close" title="Close (Esc)"></button>
+
+                <button class="pswp__button pswp__button--fs" title="Toggle fullscreen"></button>
+
+                <button class="pswp__button pswp__button--zoom" title="Zoom in/out"></button>
+
+                <div class="pswp__preloader">
+                    <div class="pswp__preloader__icn">
+                      <div class="pswp__preloader__cut">
+                        <div class="pswp__preloader__donut"></div>
+                      </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="pswp__share-modal pswp__share-modal--hidden pswp__single-tap">
+                <div class="pswp__share-tooltip"></div> 
+            </div>
+
+            <button class="pswp__button pswp__button--arrow--left" title="Previous (arrow left)">
+            </button>
+
+            <button class="pswp__button pswp__button--arrow--right" title="Next (arrow right)">
+            </button>
+
+            <div class="pswp__caption">
+                <div class="pswp__caption__center"></div>
+            </div>
+        </div>
+    </div>
+    </div>
+
+
 
     <div class="container-fluid p-0">
 
@@ -253,9 +312,6 @@
               <a href="file/Jian_StategicPlan_Outlines.pdf" target="_blank">Final Results Outlines</a>
 
             </div>
-<!--            <div class="resume-date text-md-right">
-              <span class="text-primary">August 2006 - May 2010</span>
-            </div> -->
           </div>
 
 
@@ -265,13 +321,48 @@
               <div class="subheading mb-1">Industrial Development + Transportation System + Urban Design</div>
               <a class="portfolio-link" data-toggle="modal" href="#portfolioModal_Station">Project Description</a>
               <span style="color: #3178bc">|</span>
-              <a class="portfolio-link" data-toggle="modal" href="#portfolioModal_StationP">Final Results</a>
+              <a class="portfolio-link" data-toggle="modal" href="#whatever" id="Photo_Station">Final Results</a>
 
             </div>
-<!--            <div class="resume-date text-md-right">
-              <span class="text-primary">August 2006 - May 2010</span>
-            </div> -->
           </div>
+
+          <script type="text/javascript">
+          var openPhotoSwipe = function() {
+            var pswpElement = document.querySelectorAll('.pswp')[0];
+            var items = [
+                {
+                    src: 'img/portfolio/Station/01-min.jpg',
+                    w: 841,
+                    h: 1189
+                },
+                {
+                    src: 'img/portfolio/Station/02-min.jpg',
+                    w: 841,
+                    h: 1189
+                },
+                {
+                    src: 'img/portfolio/Station/03-min.jpg',
+                    w: 841,
+                    h: 1189
+                },
+                {
+                    src: 'img/portfolio/Station/04-min.jpg',
+                    w: 841,
+                    h: 1189
+                }
+            ];
+            var options = {  
+                history: false,
+                focus: false,
+                showAnimationDuration: 1,
+                hideAnimationDuration: 1
+            };
+            var gallery = new PhotoSwipe( pswpElement, PhotoSwipeUI_Default, items, options);
+            gallery.init();
+          };
+          //openPhotoSwipe();
+          document.getElementById('Photo_Station').onclick = openPhotoSwipe;
+          </script>
 
 
           <div class="resume-item d-flex flex-column flex-md-row mb-5">
@@ -351,10 +442,18 @@
           <h2 class="mb-5">About 
             <span class="text-primary">Me</span>
           </h2>
-          <div class="subheading mb-4">(929) 391-8627 · <a href="mailto:hr335@cornell.com">hr335@cornell.com</a></div>
 
-          <a href="file/ResumeCV_HaoRong_application.pdf" target="_blank">My Resume / CV</a>
+          
+          <div class="resume-item d-flex flex-column flex-md-row col-sm-20 mb-4">
+            <div class="resume-content mr-auto col-sm-16">
+              <div class="subheading mb-4">(929) 391-8627 · <a href="mailto:hr335@cornell.com">hr335@cornell.com</a></div>
+              <a href="file/ResumeCV_HaoRong_application.pdf" target="_blank">My Resume / CV</a>
+            </div>
 
+            <div class="resume-content mr-auto col-sm-6">
+              <img class="img-fluid d-block mx-auto" src="img/PhDKnowledge.jpg" alt="">
+            </div>
+          </div>
 
 <!--
           <div class="resume-item d-flex flex-column flex-md-row mb-5">
@@ -544,6 +643,12 @@
         </div>
       </div>
     </div>
+
+
+
+
+    
+
 
     <!-- Bootstrap core JavaScript -->
     <script src="vendor/jquery/jquery.min.js"></script>
