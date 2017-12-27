@@ -210,9 +210,9 @@
 
               <a class="portfolio-link" data-toggle="modal" href="#portfolioModal_Text">Project Description</a>
               <span style="color: #3178bc">|</span>
-              <a class="portfolio-link" data-toggle="modal" href="#portfolioModal_Text">Project Visualization Demo</a>
+              <a class="portfolio-link" data-toggle="modal" href="#portfolioModal_Text">Visualization Demo</a>
               <span style="color: #3178bc">|</span>
-              <a href="file/MarketExpectation_Dec_Report.pdf" target="_blank">Latest Report (Research In Progress)</a>
+              <a href="file/MarketExpectation_Dec_Report.pdf" target="_blank">View Latest Report (Research In Progress)</a>
 
 
             </div>
@@ -233,7 +233,7 @@
               <span style="color: #3178bc">|</span>
               <a href="https://youtu.be/QzOmg2r4wx4" target="_blank">Video Demo</a>
               <span style="color: #3178bc">|</span>
-              <a href="file/Taobao_Paper.pdf" target="_blank">Final Report</a>
+              <a href="file/Taobao_Paper.pdf" target="_blank">View Final Report</a>
 
 
             </div>
@@ -309,7 +309,7 @@
               <div class="subheading mb-1">Local Finance + Water Resource Management + Tourism Plan</div>
               <a class="portfolio-link" data-toggle="modal" href="#portfolioModal_Jian">Project Description</a>
               <span style="color: #3178bc">|</span>
-              <a href="file/Jian_StategicPlan_Outlines.pdf" target="_blank">Final Results Outlines</a>
+              <a href="file/Jian_StategicPlan_Outlines.pdf" target="_blank">View Plan Outlines</a>
 
             </div>
           </div>
@@ -321,7 +321,7 @@
               <div class="subheading mb-1">Industrial Development + Transportation System + Urban Design</div>
               <a class="portfolio-link" data-toggle="modal" href="#portfolioModal_Station">Project Description</a>
               <span style="color: #3178bc">|</span>
-              <a class="portfolio-link" data-toggle="modal" href="#whatever" id="Photo_Station">Final Results</a>
+              <a class="portfolio-link" data-toggle="modal" href="#whatever" id="Photo_Station">View Work</a>
 
             </div>
           </div>
@@ -371,14 +371,48 @@
               <div class="subheading mb-1">Cultural Heritage + Pedestrain Space + Transportation System</div>
               <a class="portfolio-link" data-toggle="modal" href="#portfolioModal_Site">Project Description</a>
               <span style="color: #3178bc">|</span>
-              <a class="portfolio-link" data-toggle="modal" href="#portfolioModal_SiteP">Final Results</a>
+              <a class="portfolio-link" data-toggle="modal" href="#portfolioModal_SiteP" id="Photo_Site">View Work</a>
 
             </div>
-<!--            <div class="resume-date text-md-right">
-              <span class="text-primary">August 2006 - May 2010</span>
-            </div> -->
           </div>
 
+          <script type="text/javascript">
+          var openPhotoSwipe = function() {
+            var pswpElement = document.querySelectorAll('.pswp')[0];
+            var items = [
+                {
+                    src: 'img/portfolio/Site/01-min.jpg',
+                    w: 1189,
+                    h: 841
+                },
+                {
+                    src: 'img/portfolio/Site/02-min.jpg',
+                    w: 1189,
+                    h: 841
+                },
+                {
+                    src: 'img/portfolio/Site/03-min.jpg',
+                    w: 1189,
+                    h: 841
+                },
+                {
+                    src: 'img/portfolio/Site/04-min.jpg',
+                    w: 1189,
+                    h: 841
+                }
+            ];
+            var options = {  
+                history: false,
+                focus: false,
+                showAnimationDuration: 1,
+                hideAnimationDuration: 1
+            };
+            var gallery = new PhotoSwipe( pswpElement, PhotoSwipeUI_Default, items, options);
+            gallery.init();
+          };
+          //openPhotoSwipe();
+          document.getElementById('Photo_Site').onclick = openPhotoSwipe;
+          </script>
 
 
 
@@ -388,13 +422,38 @@
               <div class="subheading mb-1">Cultural Heritage + Architectural Design</div>
               <a class="portfolio-link" data-toggle="modal" href="#portfolioModal_Bridge">Project Description</a>
               <span style="color: #3178bc">|</span>
-              <a class="portfolio-link" data-toggle="modal" href="#portfolioModal_BridgeP">Final Results</a>
+              <a class="portfolio-link" data-toggle="modal" href="#portfolioModal_BridgeP" id="Photo_Bridge">View Work</a>
 
             </div>
-<!--            <div class="resume-date text-md-right">
-              <span class="text-primary">August 2006 - May 2010</span>
-            </div> -->
           </div>
+
+          <script type="text/javascript">
+          var openPhotoSwipe = function() {
+            var pswpElement = document.querySelectorAll('.pswp')[0];
+            var items = [
+                {
+                    src: 'img/portfolio/Bridge/01-min.jpeg',
+                    w: 1189,
+                    h: 841
+                },
+                {
+                    src: 'img/portfolio/Bridge/02-min.jpeg',
+                    w: 1189,
+                    h: 841
+                }
+            ];
+            var options = {  
+                history: false,
+                focus: false,
+                showAnimationDuration: 1,
+                hideAnimationDuration: 1
+            };
+            var gallery = new PhotoSwipe( pswpElement, PhotoSwipeUI_Default, items, options);
+            gallery.init();
+          };
+          //openPhotoSwipe();
+          document.getElementById('Photo_Bridge').onclick = openPhotoSwipe;
+          </script>
 
         </div>
 
