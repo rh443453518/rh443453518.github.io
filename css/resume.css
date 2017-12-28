@@ -118,7 +118,7 @@ a {
 
 
 .portfolio-modal .btn {
-  background-color: #3178bc
+  background-color: #3178bc;
 }
 
 .portfolio-modal {
@@ -133,11 +133,13 @@ a {
       font-size: 3em;
       margin-bottom: 15px; }
     .portfolio-modal .modal-content p {
-      margin-bottom: 30px; }
+      margin-bottom: 20px;
+      text-align: left; }
     .portfolio-modal .modal-content p.item-intro {
       font-size: 16px;
       font-style: italic;
-      margin: 20px 0 30px;
+      margin: 10px 0 10px;
+      text-align: center;
       font-family: 'Droid Serif', 'Helvetica Neue', Helvetica, Arial, sans-serif; }
     .portfolio-modal .modal-content ul.list-inline {
       margin-top: 0;
@@ -145,7 +147,8 @@ a {
     .portfolio-modal .modal-content img {
       margin-bottom: 30px; }
     .portfolio-modal .modal-content button {
-      cursor: pointer; }
+      cursor: pointer;
+      text-align: center; }
   .portfolio-modal .close-modal {
     position: absolute;
     top: 25px;
