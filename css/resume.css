@@ -138,13 +138,14 @@ a {
     .portfolio-modal .modal-content p.item-intro {
       font-size: 16px;
       font-style: italic;
-      margin: 10px 0 10px;
+      margin: 10px 0px;
       text-align: center;
       font-family: 'Droid Serif', 'Helvetica Neue', Helvetica, Arial, sans-serif; }
     .portfolio-modal .modal-content ul.list-inline {
       margin-top: 0;
       margin-bottom: 30px; }
     .portfolio-modal .modal-content img {
+      border-radius: 4px;
       margin-bottom: 30px; }
     .portfolio-modal .modal-content button {
       cursor: pointer;
